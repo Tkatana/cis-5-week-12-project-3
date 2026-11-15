@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <ctime>
 
-// Project 3 — Your Name
+// Project 3 — Tyler Quintana
 // CIS 5 Week 12 · Fifty students
 // Do not edit the boilerplate. It randomly generates 50 scores.
 // Do not type scores or names into this file.
@@ -13,6 +13,30 @@ void countGrades(const int scores[], int n, int& a, int& b, int& c, int& d, int&
   c = 0;
   d = 0;
   failing = 0;
+  for (int i = 0; i < n; ++i)
+  {
+  if (scores[i] < 60 )
+  {
+  ++ failing;  
+  }
+  if (scores[i] >= 60 && scores[i] <= 69)
+  {
+  ++ d;
+  }
+  if (scores[i] >= 70 && scores[i] <= 79)
+  {
+  ++ c;  
+  }
+  if (scores[i] >= 80 && scores[i] <= 89)
+  {
+  ++ b;  
+  }
+  if (scores[i] >= 90)
+  {
+  ++ a;  
+  }
+  
+  }
   if (n <= 0 || scores == nullptr) return;
   // TODO: for loop. Add 1 to the matching count.
   // A is 90 and up. B is 80 to 89. C is 70 to 79. D is 60 to 69.
@@ -20,6 +44,10 @@ void countGrades(const int scores[], int n, int& a, int& b, int& c, int& d, int&
 }
 
 double average(const int scores[], int n) {
+  
+  int sum = 0;
+  for(int i = 0; i < n; ++ i) sum += scores[i];
+  return sum * 1.0 / n;
   if (n <= 0 || scores == nullptr) return 0.0;
   // TODO: return the mean as a double (sum * 1.0 / n). Do not print.
   return 0.0;
@@ -27,6 +55,16 @@ double average(const int scores[], int n) {
 
 void officeHours(const int scores[], int n, int* failingCount) {
   if (failingCount != nullptr) *failingCount = 0;
+  int i = 0; // declaring new index variable for while loop
+  while (i < n)
+  {
+  if (scores[i] < 60)
+  {
+  std::cout << "Student at index [" << i << "] needs to come in for office hours! \n";  
+  *failingCount += 1;
+  }  
+  ++i; // updater so that loop ends
+  }
   if (n <= 0 || scores == nullptr) return;
   // TODO: while loop. If scores[i] is under 60, print:
   // Student at index i needs to come to office hours.
