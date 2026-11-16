@@ -12,6 +12,192 @@ Work without a working video link is incomplete.
 **Theme:** Project 2’s report, on fifty random scores  
 **Type:** Cumulative mini project (replaces the lab and the homework this week)
 
+## Functions Explained
+
+**countGrades:**  This function uses references and a for loop to compare values within the array and count how many of each value within that array meet the criteria for each letter grade. The references store the count as real numbers in main, not a copy and, the function does not print.
+
+**officeHours:**  This function uses a pointer that points to the variable failingCount which counts the lines printed for each students score that is under 60 (F). The nullptr in this function skips writing to that count if it is null.
+
+**average:**  This function returns a double because grades often have decimals. To do this you multiply the sum by a variable that is a double, in this case we use one so the value doesnt changebut the variable type does.
+
+**My Run:**  
+[0] 37
+
+[1] 24
+
+[2] 53
+
+[3] 78
+
+[4] 22
+
+[5] 43
+
+[6] 3
+
+[7] 73
+
+[8] 2
+
+[9] 52
+
+[10] 19
+
+[11] 23
+
+[12] 11
+
+[13] 30
+
+[14] 35
+
+[15] 70
+
+[16] 87
+
+[17] 40
+
+[18] 47
+
+[19] 40
+
+[20] 43
+
+[21] 35
+
+[22] 36
+
+[23] 56
+
+[24] 57
+
+[25] 0
+
+[26] 19
+
+[27] 35
+
+[28] 7
+
+[29] 95
+
+[30] 60
+
+[31] 96
+
+[32] 19
+
+[33] 13
+
+[34] 26
+
+[35] 41
+
+[36] 56
+
+[37] 29
+
+[38] 67
+
+[39] 59
+
+[40] 33
+
+[41] 38
+
+[42] 34
+
+[43] 45
+
+[44] 68
+
+[45] 69
+
+[46] 67
+
+[47] 55
+
+[48] 10
+
+[49] 66
+
+A: 2
+
+B: 1
+
+C: 3
+
+D: 6
+
+Failing: 38
+
+Average: 42.46
+
+Student at index [0] needs to come in for office hours! 
+
+Student at index [1] needs to come in for office hours! 
+
+Student at index [4] needs to come in for office hours! 
+
+Student at index [5] needs to come in for office hours!
+
+Student at index [6] needs to come in for office hours!
+
+Student at index [8] needs to come in for office hours! 
+
+Student at index [10] needs to come in for office hours!
+
+Student at index [11] needs to come in for office hours! 
+
+Student at index [12] needs to come in for office hours! 
+
+Student at index [13] needs to come in for office hours! 
+
+Student at index [14] needs to come in for office hours! 
+
+Student at index [17] needs to come in for office hours! 
+
+Student at index [18] needs to come in for office hours! 
+
+Student at index [19] needs to come in for office hours! 
+
+Student at index [20] needs to come in for office hours! 
+
+Student at index [21] needs to come in for office hours! 
+
+Student at index [22] needs to come in for office hours! 
+
+Student at index [25] needs to come in for office hours! 
+
+Student at index [26] needs to come in for office hours! 
+
+Student at index [27] needs to come in for office hours! 
+
+Student at index [28] needs to come in for office hours! 
+
+Student at index [32] needs to come in for office hours! 
+
+Student at index [33] needs to come in for office hours!
+
+Student at index [34] needs to come in for office hours!
+
+Student at index [35] needs to come in for office hours! 
+
+Student at index [37] needs to come in for office hours! 
+
+Student at index [40] needs to come in for office hours! 
+
+Student at index [41] needs to come in for office hours! 
+
+Student at index [42] needs to come in for office hours!
+
+Student at index [43] needs to come in for office hours!
+
+Student at index [48] needs to come in for office hours!
+
+Office hours: 31
+
+
 ## What to ship
 One array of fifty scores. Each score is one student. The starter fills the array with `rand`, the same way Project 2 did. You count the letter grades, print who needs office hours, and report the average. Functions do that work. `main` fills the array, calls the functions, and prints the report.
 
